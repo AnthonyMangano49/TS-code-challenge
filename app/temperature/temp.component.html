@@ -1,0 +1,27 @@
+<div id="app-temp-header">
+  Temperature Monitor
+</div>
+
+<div id="app-temp-controls">
+  <div id="app-temp-add">
+    <input name="temperature" id="temperature" [(ngModel)]="tempInput">
+    <button (click)="submitTemp()">Add Temperature</button>
+  </div>
+
+  <div id="app-temp-median">
+    <button>Median Temperature</button>
+    <input name="median" id="median" [ngModel]="tempMedian" disabled>
+    <!-- display current media here-->
+  </div>
+</div>
+
+<!--this should definitel be a reusable component w/ input to set bar width-->
+<div id="app-temp-progress">
+  <div id="app-temp-progress-bar"></div>
+</div>
+
+<div id="app-temp-display">
+  <div id="app-temp-display-item" *ngFor="let temp of [1,2,3,4,5,6,7,8]">
+    {{temp}}
+  </div>
+</div>

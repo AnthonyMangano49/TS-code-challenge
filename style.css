@@ -1,0 +1,10 @@
+/* This is for global styles */
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #F4FAFF;
+  height: 100vh;
+  margin: 0;
+  min-width: 720px;
+  overflow: hidden;
+}

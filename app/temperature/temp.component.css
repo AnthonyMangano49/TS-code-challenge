@@ -1,0 +1,77 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  padding: .5em;
+  width: 600px;
+  margin: auto;
+}
+
+#app-temp-header {
+  background: #3C3744;
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  text-transform: capitalize;
+  padding: .2em;
+}
+
+#app-temp-controls {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+#app-temp-controls > * {
+  flex: 1;
+  background: white ;
+  padding: 1em .5em;
+}
+
+#app-temp-controls input{
+  flex: 1;
+  border: 2px solid #D3FCD5;
+  outline: none;
+  text-align: center;
+  background: white;
+}
+
+#app-temp-controls button {
+    background: #D3FCD5;
+    border: 2px solid #D3FCD5;
+    outline: none;
+    color: #3C3744;
+    cursor: pointer;
+}
+#app-temp-controls button:active {
+  background: green;
+  color: white;
+}
+
+#app-temp-add, #app-temp-median{
+  display: flex;
+}
+
+
+#app-temp-display {
+  background: #D6DBE1;
+  flex: 1;
+  font-size: 3em;
+  overflow: auto;
+}
+
+#app-temp-display-item {
+  padding: .2em;
+  text-align: center;
+}
+
+#app-temp-progress {
+  background: white;
+  height: 1em;
+}
+
+#app-temp-progress-bar {
+  width: 10%;
+  height: 100%;
+  background: green;
+}
